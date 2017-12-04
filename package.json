@@ -1,0 +1,47 @@
+{
+  "name": "twine-modules",
+  "version": "0.0.1",
+  "description": "A lightweight CommonJS and ES module loading system for Twine.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "webpack",
+    "build-ts": "tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/furkleindustries/twine-modules.git"
+  },
+  "keywords": [
+    "twine",
+    "modules",
+    "es",
+    "es2015",
+    "commonjs"
+  ],
+  "author": "furkle",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/furkleindustries/twine-modules/issues"
+  },
+  "homepage": "https://github.com/furkleindustries/twine-modules#readme",
+  "devDependencies": {
+    "@types/css": "0.0.31",
+    "@types/esprima": "^4.0.1",
+    "awesome-typescript-loader": "^3.4.1",
+    "babel-cli": "^6.26.0",
+    "babel-env": "^2.4.1",
+    "babel-jest": "^21.2.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "jest": "^21.2.1",
+    "ts-jest": "^21.2.4",
+    "twine-tree": "0.0.2",
+    "typescript": "^2.6.2",
+    "webpack": "^3.9.1"
+  },
+  "dependencies": {
+    "css": "^2.2.1",
+    "esprima": "^4.0.0",
+    "immutable": "^3.8.2"
+  }
+}
