@@ -1,12 +1,14 @@
 {
   "name": "twine-modules",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A lightweight CommonJS and ES module loading system for Twine.",
-  "main": "dist/index.js",
+  "main": "dist/es6.node/index.js",
   "scripts": {
-    "build": "webpack",
-    "build-ts": "tsc",
-    "test": "jest"
+    "build": "tsc && tsc --project tsconfig.es6.json && webpack --display-modules",
+    "test": "jest",
+    "test-coverage": "jest --coverage",
+    "test-watch": "jest --watch",
+    "test-coverage-watch": "jest --coverage --watch"
   },
   "repository": {
     "type": "git",
@@ -35,13 +37,13 @@
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "jest": "^21.2.1",
     "ts-jest": "^21.2.4",
-    "twine-tree": "0.0.2",
     "typescript": "^2.6.2",
     "webpack": "^3.9.1"
   },
   "dependencies": {
     "css": "^2.2.1",
     "esprima": "^4.0.0",
-    "immutable": "^3.8.2"
+    "immutable": "^3.8.2",
+    "twine-tree": "^0.0.3"
   }
 }
